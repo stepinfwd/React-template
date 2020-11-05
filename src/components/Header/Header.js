@@ -1,11 +1,13 @@
 import React from "react";
+import "./Header.css";
+import Navigation from "../Navigation";
 
 function Header() {
   return (
-    <div>
-      <h2>HEADER</h2>
+    <div className="header-container">
+      <span>AppName</span>
+      <Navigation />
     </div>
   );
 }
-
 export default Header;

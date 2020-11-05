@@ -1,0 +1,15 @@
+.footer-container {
+  width: 100%;
+  padding: 30px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+
+  /* background-color: #edf2f7; */
+  background-color: rgb(47, 120, 255);
+  /* margin: 0 auto; */
+}
+.footer-globsl {
+  position: relative;
+}
