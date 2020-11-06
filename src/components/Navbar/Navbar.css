@@ -1,0 +1,24 @@
+.navbar-items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  background-color: rgb(253, 253, 253);
+  height: 100%;
+  z-index: 10;
+  /* border-right: 1px solid grey; */
+  box-shadow: grey;
+}
+.navbar-mask {
+  z-index: 50;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.navbar-hamburger {
+  width: 2rem;
+}
