@@ -5,11 +5,9 @@
   bottom: 0px;
   left: 0px;
   text-align: center;
+  color: #0c7c59;
 
   /* background-color: #edf2f7; */
-  background-color: rgb(47, 120, 255);
+  background-color: #2b303a;
   /* margin: 0 auto; */
-}
-.footer-globsl {
-  position: relative;
 }
