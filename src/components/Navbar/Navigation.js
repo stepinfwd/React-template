@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import toggler from "./ham.svg";
 import { useTransition, animated } from "react-spring";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import NavigationMenu from "./NavigationMenu";
 
 function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,10 +42,7 @@ function Navigation() {
         ({ item, key, props }) =>
           item && (
             <animated.div className="navbar-items" key={key} style={props}>
-              <span>MENU</span>
-              <ul>
-                <li>Home</li>
-              </ul>
+              <NavigationMenu triggerClose={() => setShowMenu(false)} />
             </animated.div>
           )
       )}

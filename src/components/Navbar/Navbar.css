@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 50%;
   background-color: rgb(253, 253, 253);
   height: 100%;
   z-index: 10;
@@ -11,15 +11,11 @@
   padding-left: 2rem;
   box-shadow: grey;
 }
-.navbar-items ul {
-  text-decoration: none;
-  list-style: none;
-  padding-left: 0 !important;
-}
 
 .navbar-mask {
   z-index: 50;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.5);
+  opacity: 0.1;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,4 +25,14 @@
 }
 .navbar-hamburger {
   width: 2rem;
+}
+/* NAVIGATION MENU */
+.navigation-menu-container ul {
+  text-decoration: none !important;
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.nav-links {
+  text-decoration: none !important;
 }

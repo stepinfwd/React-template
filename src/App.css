@@ -8,3 +8,8 @@ body {
   position: relative;
   height: 100%;
 }
+.navigation-menu ul {
+  text-decoration: none !important;
+  list-style: none !important;
+  padding-left: 0 !important;
+}
