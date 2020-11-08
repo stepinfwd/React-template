@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./components/View/Home";
 import About from "./components/View/About";
+import Product from "./components/View/Product";
 
 function App() {
   return (
@@ -13,11 +14,13 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Home />
-             
+            <Home /> 
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/product">
+            <Product />
           </Route>
         </Switch>
         <Footer />

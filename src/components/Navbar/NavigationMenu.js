@@ -11,15 +11,27 @@ function NavigationMenu(props) {
       <ul>
         <li>
           <Link className="nav-links" onClick={props.triggerClose} to="/">
-            Home
+            HOME
           </Link>
         </li>
         <li>
           <Link className="nav-links" onClick={props.triggerClose} to="/about">
-            About
+            ABOUT
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="nav-links"
+            onClick={props.triggerClose}
+            to="/product"
+          >
+            PRODUCT
           </Link>
         </li>
       </ul>
+      <div className="sidebar-footer">
+        <p>Stepinfwd&copy; 2020</p>
+      </div>
     </div>
   );
 }
