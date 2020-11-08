@@ -56,7 +56,8 @@
 }
 .navigation-menu-container ul :hover {
   background-color: #bac1b8;
-  color: #8a85ff;
+  /* color: #8a85ff; */
+  color: #0c7c59;
 }
 
 .nav-links {
