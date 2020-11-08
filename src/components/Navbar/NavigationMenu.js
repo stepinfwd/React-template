@@ -2,6 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../logo/icons8-blockchain-new-logo.svg";
+import homeLogo from "../logo/icons8-home.svg";
+import productLogo from "../logo/icons8-product-24.png";
+import aboutLogo from "../logo/icons8-about.svg";
 
 function NavigationMenu(props) {
   const { triggerClose } = props;
@@ -14,21 +17,24 @@ function NavigationMenu(props) {
       <ul>
         <li>
           <Link className="nav-links" onClick={props.triggerClose} to="/">
-            HOME
+            <img src={homeLogo}></img>
+            <p> HOME</p>
           </Link>
         </li>
         <li>
           <Link className="nav-links" onClick={props.triggerClose} to="/about">
-            ABOUT
+            <img src={aboutLogo}></img>
+            <p> ABOUT</p>
           </Link>
         </li>
         <li>
           <Link
             className="nav-links"
             onClick={props.triggerClose}
-            to="/product"
+            to="/product/:id/"
           >
-            PRODUCT
+            <img src={homeLogo}></img>
+            <p>PRODUCT</p>
           </Link>
         </li>
       </ul>
