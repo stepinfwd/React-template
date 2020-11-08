@@ -11,15 +11,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header className="headers" />
         <Switch>
           <Route exact path="/">
-            <Home /> 
+            <Home />
+             
           </Route>
           <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="/product">
+          <Route exact path="/product/:id">
             <Product />
           </Route>
         </Switch>
