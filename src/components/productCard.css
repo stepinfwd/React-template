@@ -1,0 +1,13 @@
+.product-card-img {
+  width: 100%;
+  height: auto;
+  min-height: 28rem !important;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-image: url("./pokemon.png"); */
+}
+.product-card {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
