@@ -6,3 +6,8 @@
   /* padding-bottom: 1rem; */
   margin-bottom: 10rem;
 }
+.product-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}

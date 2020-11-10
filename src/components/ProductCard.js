@@ -8,21 +8,27 @@ function ProductCard(props) {
   console.log("der", details);
 
   return (
-    <div className="product-card">
-      <Link to={`/products/${details.id}`}>
+    <div className="align">
+      <div className="product-container">
+        {/* <Link to={`/products/${details.id}`}> */}
         <div
-          className="product-card-img"
+          className="square"
           style={{ backgroundImage: `url(${details.image})` }}
         ></div>
-      </Link>
-      <div className="product-card-details">
-        <h2>{details.name}</h2>
-        <p> {details.price}</p>
-        <p>{details.test}</p>
+
+        {/* </Link> */}
+        <div className="h1">
+          <h1>{details.name}</h1>
+          <p> {details.price}</p>
+          <p>{details.test}</p>
+
+          <Link to={`/product/${details.id}`}>
+            <div>
+              <button className="button">View</button>
+            </div>
+          </Link>
+        </div>
       </div>
-      <Link to={`/products/${details.id}`}>
-        <button>View</button>\
-      </Link>
     </div>
   );
 }

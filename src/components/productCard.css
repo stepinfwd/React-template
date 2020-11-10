@@ -1,13 +1,79 @@
-.product-card-img {
-  width: 100%;
-  height: auto;
-  min-height: 28rem !important;
-  /* background-size: cover; */
-  background-repeat: no-repeat;
-  /* background-image: url("./pokemon.png"); */
-}
-.product-card {
-  overflow: hidden;
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 18rem;
+  /* border: 1px solid rgb(116, 116, 133); */
+  height: 34rem;
+  margin-bottom: 2rem;
   border-radius: 5px;
-  margin-bottom: 40px;
+}
+
+.square {
+  width: 18rem;
+  min-height: 250px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #adadad;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* .mask {
+  clip: rect(0px, 22rem, 12rem, 0px);
+  background-size: cover;
+  border-radius: 4px;
+  position: absolute;
+} */
+.mask {
+  width: 2rem !important;
+}
+
+.sqaure {
+  background-size: contain;
+}
+
+.h1 {
+  text-align: left;
+  color: #2c2c2cef;
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  margin-bottom: 0 !important;
+  background-color: rgb(247, 242, 242);
+}
+.h1 p {
+  text-align: justify;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding-left: 0.5rem;
+  color: #383838ef;
+}
+
+.button {
+  background-color: #3ebddd;
+  color: white;
+  width: 120px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  margin-top: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 2rem;
+
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "merriweather";
+}
+.align {
+  display: flex;
+  justify-content: center;
 }

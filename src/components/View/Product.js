@@ -28,14 +28,19 @@ function Product(props) {
 
   if (product.data) {
     return (
-      <div className="product-card-container">
-        <h3>{product.data.test}</h3>
-        <img src={product.data.image}></img>
-        <h3>
-          $<span style={{ paddingLeft: ".5rem" }}></span>
-          {product.data.price}
-        </h3>
-        <p>{product.data.text}</p>
+      <div className="align">
+        <div className="product-container">
+          <div
+            className="square"
+            style={{ backgroundImage: `url(${product.data.image})` }}
+          ></div>
+
+          <div className="h1">
+            <h1>{product.data.name}</h1>
+            <p> {product.data.price}</p>
+            <p>{product.data.test}</p>
+          </div>
+        </div>
       </div>
     );
   }
